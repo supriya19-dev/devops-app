@@ -42,6 +42,7 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/devops-app:latest
+
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v1.2.0
         with:
